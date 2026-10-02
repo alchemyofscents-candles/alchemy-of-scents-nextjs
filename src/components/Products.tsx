@@ -1,0 +1,61 @@
+import FadeIn from "./FadeIn";
+import ProductCard, { Product } from "./ProductCard";
+
+const PRODUCTS: Product[] = [
+  {
+    title: "GLASS JAR CANDLES",
+    description:
+      "Classic scented candles designed to complement every space.",
+    image: "/images/smoor-bulk-closeup.jpg",
+  },
+  {
+    title: "BLACK MATTE JAR CANDLES",
+    description:
+      "Bold, contemporary candles that bring a refined touch to any space.",
+    image: "/images/IMG_1198.jpg",
+  },
+  {
+    title: "FROSTED JAR CANDLES",
+    description:
+      "Soft, understated candles crafted to create a calm and elegant ambience.",
+    image: "/images/frosted-jar-candle.png",
+  },
+  {
+    title: "GEOMETRIC PILLAR CANDLES",
+    description:
+      "Sculptural candles that add character and style to any setting.",
+    image: "/images/pillar-closeup.jpg",
+  },
+  {
+    title: "CUSTOM CANDLES",
+    description:
+      "Custom-designed candles created for brands, events and special occasions.",
+    image: "/images/jimmychoo-closeup.jpeg",
+  },
+];
+
+export default function Products() {
+  return (
+    <section id="products" className="py-20 md:py-28">
+      <div className="max-w-content mx-auto px-6 md:px-10">
+        <FadeIn className="text-center max-w-xl mx-auto mb-14 md:mb-16">
+          <p className="text-xs tracking-[0.2em] text-burgundy mb-5">PRODUCTS</p>
+          <h2 className="font-serif text-3xl md:text-4xl text-charcoal mb-4">
+            OUR PRODUCTS
+          </h2>
+          <p className="text-charcoal/70">
+            For personal spaces, businesses, celebrations and everything in between.
+          </p>
+        </FadeIn>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+          {PRODUCTS.map((product, i) => (
+            <FadeIn key={product.title} delay={i * 80}>
+              <ProductCard {...product} />
+            </FadeIn>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
