@@ -29,10 +29,10 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Email Alchemy of Scents"
-              className="inline-flex items-center gap-3 text-charcoal hover:underline transition-colors"
+              className="inline-flex items-center gap-2.5 text-charcoal hover:underline transition-colors"
             >
-              <MailIcon className="w-7 h-7" />
-              <span className="text-lg tracking-wide">alchemyofscents@gmail.com</span>
+              <MailIcon className="w-5 h-5" />
+              <span className="text-sm tracking-wide">alchemyofscents@gmail.com</span>
             </a>
 
             <a
@@ -40,10 +40,10 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Message Alchemy of Scents on WhatsApp"
-              className="inline-flex items-center gap-3 text-charcoal hover:underline transition-colors"
+              className="inline-flex items-center gap-2.5 text-charcoal hover:underline transition-colors"
             >
-              <WhatsAppIcon className="w-7 h-7" />
-              <span className="text-lg tracking-wide">+91 90199 51550</span>
+              <WhatsAppIcon className="w-5 h-5" />
+              <span className="text-sm tracking-wide">+91 90199 51550</span>
             </a>
 
             <a
@@ -51,10 +51,10 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Alchemy of Scents on Instagram"
-              className="inline-flex items-center gap-3 text-charcoal hover:underline transition-colors"
+              className="inline-flex items-center gap-2.5 text-charcoal hover:underline transition-colors"
             >
-              <InstagramIcon className="w-7 h-7" />
-              <span className="text-lg tracking-wide">@alchemyofscents</span>
+              <InstagramIcon className="w-5 h-5" />
+              <span className="text-sm tracking-wide">@alchemyofscents</span>
             </a>
           </div>
         </FadeIn>
