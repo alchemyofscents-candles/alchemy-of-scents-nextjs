@@ -1,5 +1,6 @@
 import FadeIn from "./FadeIn";
-import ProductCard, { Product } from "./ProductCard";
+import { Product } from "./ProductCard";
+import ProductCarousel from "./ProductCarousel";
 
 const PRODUCTS: Product[] = [
   {
@@ -41,20 +42,16 @@ export default function Products() {
         <FadeIn className="text-center max-w-xl mx-auto mb-14 md:mb-16">
           <p className="text-[11px] tracking-[0.25em] mb-5">PRODUCTS</p>
           <h2 className="text-4xl md:text-6xl text-charcoal mb-4 uppercase">
-            Our products
+            Our Products
           </h2>
           <p className="text-charcoal/70 text-[15px]">
             For personal spaces, businesses, celebrations and everything in between.
           </p>
         </FadeIn>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-12">
-          {PRODUCTS.map((product, i) => (
-            <FadeIn key={product.title} delay={i * 80}>
-              <ProductCard {...product} />
-            </FadeIn>
-          ))}
-        </div>
+        <FadeIn>
+          <ProductCarousel products={PRODUCTS} />
+        </FadeIn>
       </div>
     </section>
   );
