@@ -21,7 +21,6 @@ export default function Contact() {
           </p>
 
           <div className="space-y-3 mb-8">
-            <p className="text-lg text-charcoal">Alchemy of Scents</p>
           </div>
 
           <div className="flex flex-col items-center gap-4">
