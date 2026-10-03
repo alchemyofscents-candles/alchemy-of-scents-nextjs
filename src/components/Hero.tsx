@@ -1,21 +1,17 @@
+import Image from "next/image";
 import FadeIn from "./FadeIn";
 
 export default function Hero() {
   return (
     <section id="home">
       <div className="relative w-full min-h-[560px] h-[85vh] bg-taupe">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          poster="/images/coconut-bulk-aesthetic.jpg"
-          aria-label="Alchemy of Scents candle"
-          className="absolute inset-0 h-full w-full object-cover object-top"
-        >
-          <source src="/videos/smoor packaging.mp4" type="video/mp4" />
-        </video>
+        <Image
+          src="/images/urli-bulk.jpeg"
+          alt="Alchemy of Scents Diwali candles"
+          fill
+          priority
+          className="object-cover object-top"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
 
         <FadeIn className="absolute bottom-0 left-0 right-0 p-6 md:p-12 text-white">
