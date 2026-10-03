@@ -25,7 +25,7 @@ const PRODUCTS: Product[] = [
   },
   {
     title: "Mason Jar Candles",
-    image: "/images/IMG_1198.jpeg",
+    image: "/images/IMG_1198.jpg",
   },
   {
     title: "Urli Candles",
