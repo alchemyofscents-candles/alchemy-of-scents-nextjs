@@ -12,7 +12,7 @@ export default function Hero() {
           preload="auto"
           poster="/images/urli-bulk.jpeg"
           aria-label="Alchemy of Scents Diwali candles"
-          className="absolute inset-0 h-full w-full object-cover object-top"
+          className="absolute inset-0 h-full w-full object-cover object-[50%_25%]"
         >
           <source src="/videos/urli-bulk-video.mp4" type="video/mp4" />
         </video>
