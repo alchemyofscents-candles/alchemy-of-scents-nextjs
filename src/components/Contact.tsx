@@ -13,7 +13,7 @@ export default function Contact() {
         <FadeIn>
           <p className="text-[11px] tracking-[0.25em] mb-5">CONTACT US</p>
           <h2 className="text-4xl md:text-6xl text-charcoal mb-6 uppercase">
-            Let&apos;s connect
+            GET IN TOUCH
           </h2>
           <p className="text-charcoal/70 leading-relaxed mb-9 max-w-sm mx-auto">
             Looking for candles for your brand, event, business or next

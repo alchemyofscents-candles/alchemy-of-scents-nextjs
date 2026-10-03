@@ -1,10 +1,9 @@
-import InstagramIcon from "./InstagramIcon";
-
 const NAV_ITEMS = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Products", href: "#products" },
   { label: "Catalogue", href: "#catalogue" },
+  { label: "Services", href: "#services" },
   { label: "Contact Us", href: "#contact" },
 ];
 
@@ -17,16 +16,7 @@ export default function Footer() {
           <p className="text-sm text-charcoal/60">
             Thoughtfully crafted candles &amp; fragrances.
           </p>
-          <a
-            href="https://www.instagram.com/alchemyofscents/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Alchemy of Scents on Instagram"
-            className="inline-block mt-6"
-          >
-            <InstagramIcon />
-          </a>
-          <p className="text-xs text-charcoal/50 mt-4">
+          <p className="text-xs text-charcoal/50 mt-6">
             &copy; 2026 Alchemy of Scents. All rights reserved.
           </p>
         </div>

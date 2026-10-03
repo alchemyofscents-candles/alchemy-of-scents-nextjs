@@ -22,7 +22,7 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <section className="py-20 md:py-32">
+    <section id="services" className="py-20 md:py-32 bg-taupe">
       <div className="max-w-content mx-auto px-6 md:px-10">
         <FadeIn className="text-center mb-14">
           <h2 className="text-4xl md:text-6xl text-charcoal uppercase">
@@ -32,9 +32,9 @@ export default function Services() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-charcoal/15">
           {SERVICES.map((service, i) => (
-            <FadeIn key={service.title} delay={i * 80} className="border-r border-b border-charcoal/15 p-8 min-h-[260px] flex flex-col justify-between">
-              <p className="text-[11px] tracking-[0.25em] mb-10">{String(i + 1).padStart(2, "0")}</p>
-              <h3 className="text-xl uppercase mb-2">
+            <FadeIn key={service.title} delay={i * 80} className="border-r border-b border-charcoal/15 p-8 min-h-[260px] flex flex-col items-center text-center">
+              <p className="text-[11px] tracking-[0.25em] mb-8">{String(i + 1).padStart(2, "0")}</p>
+              <h3 className="text-xl uppercase mb-4 min-h-[3.5rem] flex items-center justify-center">
                 {service.title}
               </h3>
               <p className="text-sm text-charcoal/70 leading-relaxed">
