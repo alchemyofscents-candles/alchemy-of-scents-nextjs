@@ -9,7 +9,7 @@ const PRODUCTS: Product[] = [
   },
   {
     title: "Black Matte Jar Candles",
-    image: "/images/IMG_1198.jpg",
+    image: "/images/black-matte-jar-candle.jpg",
   },
   {
     title: "Frosted Jar Candles",
@@ -47,7 +47,7 @@ export default function Products() {
             Our Products
           </h2>
           <p className="text-charcoal/70 text-[15px]">
-            For personal spaces, businesses, celebrations and everything in between.
+            For special moments, gifting, celebrations, private labels & more.
           </p>
         </FadeIn>
 
