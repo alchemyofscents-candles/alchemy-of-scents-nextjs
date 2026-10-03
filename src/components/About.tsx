@@ -3,11 +3,10 @@ import FadeIn from "./FadeIn";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 md:py-28 bg-taupe/40">
-      <div className="max-w-content mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+    <section id="about" className="py-20 md:py-28">
+      <div className="max-w-content mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-12 md:gap-20 items-center">
         <FadeIn>
-          <div className="relative w-full aspect-[4/5] overflow-hidden rounded-sm bg-taupe">
-            {/* Replace with a real lifestyle photo in public/images */}
+          <div className="relative w-full aspect-[4/5] overflow-hidden rounded-t-[999px] rounded-b-3xl bg-taupe">
             <Image
               src="/images/aos-setup-home.jpg"
               alt="Alchemy of Scents lifestyle"
@@ -18,9 +17,9 @@ export default function About() {
         </FadeIn>
 
         <FadeIn delay={150}>
-          <p className="text-xs tracking-[0.2em] text-burgundy mb-5">ABOUT</p>
-          <h2 className="font-serif text-3xl md:text-4xl text-charcoal mb-7">
-            ABOUT US
+          <p className="text-[11px] tracking-[0.25em] text-burgundy mb-5">ABOUT US</p>
+          <h2 className="font-serif text-4xl md:text-5xl text-charcoal mb-7 leading-tight">
+            Fragrance that turns <span className="italic">moments</span> into rituals
           </h2>
           <div className="space-y-5 text-charcoal/75 leading-relaxed max-w-md">
             <p>

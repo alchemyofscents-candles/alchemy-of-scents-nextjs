@@ -10,10 +10,10 @@ const NAV_ITEMS = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-taupe-dark/40 py-14">
+    <footer className="bg-charcoal text-cream rounded-t-[2rem] md:rounded-t-[3rem] mt-10 py-16">
       <div className="max-w-content mx-auto px-6 md:px-10 flex flex-col items-center text-center gap-6">
-        <p className="font-serif text-xl text-charcoal">ALCHEMY OF SCENTS</p>
-        <p className="text-sm text-charcoal/60">
+        <p className="font-serif text-3xl tracking-[0.12em]">ALCHEMY OF SCENTS</p>
+        <p className="text-sm text-cream/60">
           Thoughtfully crafted candles &amp; fragrances.
         </p>
 
@@ -22,7 +22,7 @@ export default function Footer() {
             <a
               key={item.href}
               href={item.href}
-              className="text-xs tracking-[0.1em] text-charcoal/70 hover:text-burgundy transition-colors"
+              className="text-[11px] tracking-[0.18em] uppercase text-cream/70 hover:text-cream transition-colors"
             >
               {item.label}
             </a>
@@ -34,12 +34,12 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Alchemy of Scents on Instagram"
-          className="text-charcoal/70 hover:text-burgundy transition-colors"
+          className="text-cream/70 hover:text-cream transition-colors"
         >
           <InstagramIcon />
         </a>
 
-        <p className="text-xs text-charcoal/50 pt-4">
+        <p className="text-xs text-cream/40 pt-4">
           &copy; 2026 Alchemy of Scents. All rights reserved.
         </p>
       </div>

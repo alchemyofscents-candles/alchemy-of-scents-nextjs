@@ -14,9 +14,9 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-taupe-dark/40">
-      <div className="max-w-content mx-auto px-6 md:px-10 flex items-center justify-between h-20">
-        <a href="#home" className="font-serif text-xl md:text-2xl tracking-wide text-charcoal">
+    <header className="sticky top-0 z-50 px-4 md:px-8 pt-4">
+      <div className="max-w-content mx-auto px-6 md:px-8 flex items-center justify-between h-16 rounded-full bg-cream/85 backdrop-blur-md shadow-[0_4px_30px_rgba(42,32,26,0.08)] border border-white/60">
+        <a href="#home" className="font-serif text-lg md:text-xl tracking-[0.12em] text-charcoal">
           ALCHEMY OF SCENTS
         </a>
 
@@ -26,7 +26,7 @@ export default function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="text-xs tracking-[0.15em] text-charcoal/80 hover:text-burgundy transition-colors"
+              className="text-[11px] tracking-[0.18em] text-charcoal/80 hover:text-burgundy transition-colors"
             >
               {item.label}
             </a>
@@ -56,7 +56,7 @@ export default function Header() {
 
       {/* Mobile nav panel */}
       {open && (
-        <nav className="md:hidden border-t border-taupe-dark/40 bg-cream px-6 py-6 flex flex-col gap-5">
+        <nav className="md:hidden mt-2 rounded-3xl bg-cream shadow-lg px-6 py-6 flex flex-col gap-5">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.href}

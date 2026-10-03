@@ -35,9 +35,9 @@ export default function Contact() {
     <section id="contact" className="py-20 md:py-28">
       <div className="max-w-content mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-14 md:gap-20">
         <FadeIn>
-          <p className="text-xs tracking-[0.2em] text-burgundy mb-5">CONTACT US</p>
-          <h2 className="font-serif text-3xl md:text-4xl text-charcoal mb-6">
-            LET&apos;S CONNECT
+          <p className="text-[11px] tracking-[0.25em] text-burgundy mb-5">CONTACT US</p>
+          <h2 className="font-serif text-4xl md:text-5xl text-charcoal mb-6">
+            Let&apos;s connect
           </h2>
           <p className="text-charcoal/70 leading-relaxed mb-9 max-w-sm">
             Looking for candles for your brand, event, business or next
@@ -85,7 +85,7 @@ export default function Contact() {
         </FadeIn>
 
         <FadeIn delay={150}>
-          <form onSubmit={handleSubmit} className="space-y-5">
+          <form onSubmit={handleSubmit} className="space-y-5 rounded-[2rem] bg-cream p-8 md:p-10 shadow-[0_10px_40px_rgba(42,32,26,0.08)]">
             <div>
               <label className="block text-xs tracking-[0.1em] text-charcoal/70 mb-2">
                 NAME
@@ -132,7 +132,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="inline-block bg-charcoal text-cream px-8 py-3.5 text-xs tracking-[0.15em] hover:bg-burgundy transition-colors"
+              className="inline-block rounded-full bg-charcoal text-cream px-9 py-4 text-[11px] tracking-[0.2em] hover:bg-burgundy transition-colors"
             >
               SEND ENQUIRY
             </button>

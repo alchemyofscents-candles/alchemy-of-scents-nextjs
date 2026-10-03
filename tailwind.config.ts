@@ -5,11 +5,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: "#FAF6EF",
-        charcoal: "#211F1C",
-        taupe: "#E6DCCB",
+        cream: "#F4EDE3",
+        charcoal: "#2A201A",
+        taupe: "#E9DECE",
         "taupe-dark": "#C9B99A",
-        burgundy: "#6E2A2E",
+        burgundy: "#8A4B32",
       },
       fontFamily: {
         serif: ["var(--font-heading)", "Georgia", "serif"],
