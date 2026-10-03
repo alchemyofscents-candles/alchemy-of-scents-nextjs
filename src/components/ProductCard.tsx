@@ -8,8 +8,8 @@ export type Product = {
 
 export default function ProductCard({ title, description, image }: Product) {
   return (
-    <div className="group flex flex-col rounded-[2rem] bg-cream p-3 shadow-[0_2px_20px_rgba(42,32,26,0.05)] hover:shadow-[0_10px_40px_rgba(42,32,26,0.12)] transition-shadow">
-      <div className="relative w-full aspect-[4/5] overflow-hidden rounded-[1.5rem] bg-taupe mb-5">
+    <div className="group flex flex-col">
+      <div className="relative w-full aspect-[4/5] overflow-hidden bg-taupe mb-4">
         <Image
           src={image}
           alt={title}
@@ -17,12 +17,12 @@ export default function ProductCard({ title, description, image }: Product) {
           className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
       </div>
-      <div className="px-3 pb-4">
-        <h3 className="font-serif text-2xl text-charcoal mb-2">{title}</h3>
+      <div className="border-t border-charcoal pt-3">
+        <h3 className="text-lg uppercase mb-2">{title}</h3>
         <p className="text-sm text-charcoal/70 leading-relaxed mb-4">{description}</p>
         <a
           href="#contact"
-          className="inline-block rounded-full border border-charcoal/30 px-5 py-2 text-[11px] tracking-[0.18em] text-charcoal group-hover:bg-charcoal group-hover:text-cream transition-colors"
+          className="text-[11px] tracking-[0.2em] underline underline-offset-4 hover:no-underline"
         >
           ENQUIRE
         </a>

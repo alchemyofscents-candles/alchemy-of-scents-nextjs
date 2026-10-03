@@ -5,15 +5,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: "#F4EDE3",
-        charcoal: "#2A201A",
-        taupe: "#E9DECE",
-        "taupe-dark": "#C9B99A",
-        burgundy: "#8A4B32",
+        cream: "#FFFFFF",
+        charcoal: "#111111",
+        taupe: "#F2F2F0",
+        "taupe-dark": "#D9D9D6",
+        burgundy: "#111111",
       },
       fontFamily: {
-        serif: ["var(--font-heading)", "Georgia", "serif"],
-        sans: ["var(--font-body)", "system-ui", "sans-serif"],
+        serif: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
+        sans: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
       },
       maxWidth: {
         content: "1200px",

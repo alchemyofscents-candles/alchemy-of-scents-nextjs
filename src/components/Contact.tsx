@@ -35,8 +35,8 @@ export default function Contact() {
     <section id="contact" className="py-20 md:py-28">
       <div className="max-w-content mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-14 md:gap-20">
         <FadeIn>
-          <p className="text-[11px] tracking-[0.25em] text-burgundy mb-5">CONTACT US</p>
-          <h2 className="font-serif text-4xl md:text-5xl text-charcoal mb-6">
+          <p className="text-[11px] tracking-[0.25em] mb-5">CONTACT US</p>
+          <h2 className="text-4xl md:text-6xl text-charcoal mb-6 uppercase">
             Let&apos;s connect
           </h2>
           <p className="text-charcoal/70 leading-relaxed mb-9 max-w-sm">
@@ -45,7 +45,7 @@ export default function Contact() {
           </p>
 
           <div className="space-y-3 mb-8">
-            <p className="font-serif text-lg text-charcoal">Alchemy of Scents</p>
+            <p className="text-lg text-charcoal">Alchemy of Scents</p>
           </div>
 
           <div className="flex flex-col gap-4">
@@ -54,7 +54,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Email Alchemy of Scents"
-              className="inline-flex items-center gap-2 text-charcoal hover:text-burgundy transition-colors"
+              className="inline-flex items-center gap-2 text-charcoal hover:underline transition-colors"
             >
               <MailIcon />
               <span className="text-sm tracking-wide">alchemyofscents@gmail.com</span>
@@ -65,7 +65,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Message Alchemy of Scents on WhatsApp"
-              className="inline-flex items-center gap-2 text-charcoal hover:text-burgundy transition-colors"
+              className="inline-flex items-center gap-2 text-charcoal hover:underline transition-colors"
             >
               <WhatsAppIcon />
               <span className="text-sm tracking-wide">+91 90199 51550</span>
@@ -76,7 +76,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Alchemy of Scents on Instagram"
-              className="inline-flex items-center gap-2 text-charcoal hover:text-burgundy transition-colors"
+              className="inline-flex items-center gap-2 text-charcoal hover:underline transition-colors"
             >
               <InstagramIcon />
               <span className="text-sm tracking-wide">@alchemyofscents</span>
@@ -85,7 +85,7 @@ export default function Contact() {
         </FadeIn>
 
         <FadeIn delay={150}>
-          <form onSubmit={handleSubmit} className="space-y-5 rounded-[2rem] bg-cream p-8 md:p-10 shadow-[0_10px_40px_rgba(42,32,26,0.08)]">
+          <form onSubmit={handleSubmit} className="space-y-5">
             <div>
               <label className="block text-xs tracking-[0.1em] text-charcoal/70 mb-2">
                 NAME
@@ -132,13 +132,13 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="inline-block rounded-full bg-charcoal text-cream px-9 py-4 text-[11px] tracking-[0.2em] hover:bg-burgundy transition-colors"
+              className="inline-block border border-charcoal bg-charcoal text-white px-9 py-4 text-[11px] tracking-[0.2em] hover:bg-white hover:text-charcoal transition-colors"
             >
               SEND ENQUIRY
             </button>
 
             {submitted && (
-              <p className="text-sm text-burgundy pt-2">
+              <p className="text-sm pt-2">
                 Thank you — we&apos;ll get back to you shortly!
               </p>
             )}

@@ -9,8 +9,8 @@ export default function Catalogue() {
     <section id="catalogue" className="py-20 md:py-28">
       <div className="max-w-content mx-auto px-6 md:px-10 text-center">
         <FadeIn className="max-w-xl mx-auto mb-12">
-          <p className="text-[11px] tracking-[0.25em] text-burgundy mb-5">CATALOGUE</p>
-          <h2 className="font-serif text-4xl md:text-5xl text-charcoal mb-4">
+          <p className="text-[11px] tracking-[0.25em] mb-5">CATALOGUE</p>
+          <h2 className="text-4xl md:text-6xl text-charcoal mb-4 uppercase">
             Our catalogue
           </h2>
           <p className="text-charcoal/70">
@@ -19,7 +19,7 @@ export default function Catalogue() {
         </FadeIn>
 
         <FadeIn delay={120}>
-          <div className="relative w-full max-w-md mx-auto aspect-[3/4] overflow-hidden rounded-[2rem] bg-cream shadow-[0_10px_40px_rgba(42,32,26,0.12)] mb-10">
+          <div className="relative w-full max-w-md mx-auto aspect-[3/4] overflow-hidden bg-white border border-charcoal/15 mb-10">
             {/* Replace with a cover image of your actual catalogue */}
             <Image
               src="/catalogue/_AOS Catalog - With Pricing.png"
@@ -34,14 +34,14 @@ export default function Catalogue() {
               href={CATALOGUE_PDF}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block rounded-full bg-charcoal text-cream px-9 py-4 text-[11px] tracking-[0.2em] hover:bg-burgundy transition-colors"
+              className="inline-block border border-charcoal bg-charcoal text-white px-9 py-4 text-[11px] tracking-[0.2em] hover:bg-white hover:text-charcoal transition-colors"
             >
               VIEW CATALOGUE
             </a>
             <a
               href={CATALOGUE_PDF}
               download
-              className="inline-block rounded-full border border-charcoal text-charcoal px-9 py-4 text-[11px] tracking-[0.2em] hover:bg-charcoal hover:text-cream transition-colors"
+              className="inline-block border border-charcoal text-charcoal px-9 py-4 text-[11px] tracking-[0.2em] hover:bg-charcoal hover:text-cream transition-colors"
             >
               DOWNLOAD CATALOGUE
             </a>
