@@ -4,35 +4,37 @@ import ProductCarousel from "./ProductCarousel";
 
 const PRODUCTS: Product[] = [
   {
-    title: "Glass Jar Candles",
-    description:
-      "Classic scented candles designed to complement every space.",
+    title: "Shot Glass Candles",
     image: "/images/smoor-bulk-closeup.jpg",
   },
   {
     title: "Black Matte Jar Candles",
-    description:
-      "Bold, contemporary candles that bring a refined touch to any space.",
     image: "/images/IMG_1198.jpg",
   },
   {
     title: "Frosted Jar Candles",
-    description:
-      "Soft, understated candles crafted to create a calm and elegant ambience.",
     image: "/images/frosted-jar-candle.png",
   },
   {
     title: "Geometric Pillar Candles",
-    description:
-      "Sculptural candles that add character and style to any setting.",
     image: "/images/pillar-closeup.jpg",
   },
   {
-    title: "Custom Candles",
-    description:
-      "Custom-designed candles created for brands, events and special occasions.",
+    title: "Clear Jar Candles",
     image: "/images/jimmychoo-closeup.jpeg",
   },
+  {
+    title: "Mason Jar Candles",
+    image: "/images/IMG_1198.jpeg",
+  },
+  {
+    title: "Urli Candles",
+    image: "/images/urli.jpg",
+  },
+  {
+    title: "Black Matte Straight Sided Jar Candles",
+    image: "/images/black-straight-sided-jar.jpg",
+  },  
 ];
 
 export default function Products() {

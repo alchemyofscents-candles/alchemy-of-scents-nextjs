@@ -9,13 +9,13 @@ const GMAIL_URL = "https://mail.google.com/mail/?view=cm&fs=1&to=alchemyofscents
 export default function Contact() {
   return (
     <section id="contact" className="py-20 md:py-28">
-      <div className="max-w-content mx-auto px-6 md:px-10">
+      <div className="max-w-content mx-auto px-6 md:px-10 text-center">
         <FadeIn>
           <p className="text-[11px] tracking-[0.25em] mb-5">CONTACT US</p>
           <h2 className="text-4xl md:text-6xl text-charcoal mb-6 uppercase">
             Let&apos;s connect
           </h2>
-          <p className="text-charcoal/70 leading-relaxed mb-9 max-w-sm">
+          <p className="text-charcoal/70 leading-relaxed mb-9 max-w-sm mx-auto">
             Looking for candles for your brand, event, business or next
             gifting experience? We&apos;d love to hear from you.
           </p>
@@ -24,16 +24,16 @@ export default function Contact() {
             <p className="text-lg text-charcoal">Alchemy of Scents</p>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col items-center gap-4">
             <a
               href={GMAIL_URL}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Email Alchemy of Scents"
-              className="inline-flex items-center gap-2 text-charcoal hover:underline transition-colors"
+              className="inline-flex items-center gap-3 text-charcoal hover:underline transition-colors"
             >
-              <MailIcon />
-              <span className="text-sm tracking-wide">alchemyofscents@gmail.com</span>
+              <MailIcon className="w-7 h-7" />
+              <span className="text-lg tracking-wide">alchemyofscents@gmail.com</span>
             </a>
 
             <a
@@ -41,10 +41,10 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Message Alchemy of Scents on WhatsApp"
-              className="inline-flex items-center gap-2 text-charcoal hover:underline transition-colors"
+              className="inline-flex items-center gap-3 text-charcoal hover:underline transition-colors"
             >
-              <WhatsAppIcon />
-              <span className="text-sm tracking-wide">+91 90199 51550</span>
+              <WhatsAppIcon className="w-7 h-7" />
+              <span className="text-lg tracking-wide">+91 90199 51550</span>
             </a>
 
             <a
@@ -52,10 +52,10 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Alchemy of Scents on Instagram"
-              className="inline-flex items-center gap-2 text-charcoal hover:underline transition-colors"
+              className="inline-flex items-center gap-3 text-charcoal hover:underline transition-colors"
             >
-              <InstagramIcon />
-              <span className="text-sm tracking-wide">@alchemyofscents</span>
+              <InstagramIcon className="w-7 h-7" />
+              <span className="text-lg tracking-wide">@alchemyofscents</span>
             </a>
           </div>
         </FadeIn>

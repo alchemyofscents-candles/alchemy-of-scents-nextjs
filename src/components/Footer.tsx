@@ -11,11 +11,23 @@ const NAV_ITEMS = [
 export default function Footer() {
   return (
     <footer className="border-t border-charcoal py-14">
-      <div className="px-6 md:px-10 grid md:grid-cols-3 gap-10">
+      <div className="px-6 md:px-10 grid md:grid-cols-2 gap-10">
         <div>
           <p className="text-2xl tracking-[0.05em] mb-3">ALCHEMY OF SCENTS</p>
           <p className="text-sm text-charcoal/60">
             Thoughtfully crafted candles &amp; fragrances.
+          </p>
+          <a
+            href="https://www.instagram.com/alchemyofscents/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Alchemy of Scents on Instagram"
+            className="inline-block mt-6"
+          >
+            <InstagramIcon />
+          </a>
+          <p className="text-xs text-charcoal/50 mt-4">
+            &copy; 2026 Alchemy of Scents. All rights reserved.
           </p>
         </div>
 
@@ -30,20 +42,6 @@ export default function Footer() {
             </a>
           ))}
         </nav>
-
-        <div className="flex flex-col gap-4 md:items-end">
-          <a
-            href="https://www.instagram.com/alchemyofscents/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Alchemy of Scents on Instagram"
-          >
-            <InstagramIcon />
-          </a>
-          <p className="text-xs text-charcoal/50">
-            &copy; 2026 Alchemy of Scents. All rights reserved.
-          </p>
-        </div>
       </div>
     </footer>
   );
