@@ -19,7 +19,7 @@ export default function Hero() {
             FOR MOMENTS WORTH CELEBRATING. AVAILABLE FOR BULK ORDERS.
           </p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl leading-[0.95] mb-8 max-w-4xl uppercase">
-            Your Diwali Candles, now 20% OFF.
+            Light up your Diwali with Us
           </h1>
           <a
             href="#products"

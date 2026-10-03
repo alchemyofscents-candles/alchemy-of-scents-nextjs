@@ -1,8 +1,8 @@
 import Image from "next/image";
 import FadeIn from "./FadeIn";
 
-// Replace this with the real path once you add your PDF to public/catalogue/
-const CATALOGUE_PDF = "/catalogue/Alchemy-of-Ccents-Catalogue.pdf";
+const CATALOGUE_CANVA_URL = "https://canva.link/aos-catalog";
+const CATALOGUE_PDF = "/catalogue/Alchemy-of-Scents-Catalogue.pdf";
 
 export default function Catalogue() {
   return (
@@ -19,19 +19,24 @@ export default function Catalogue() {
         </FadeIn>
 
         <FadeIn delay={120}>
-          <div className="relative w-full max-w-md mx-auto aspect-[3/4] overflow-hidden bg-white border border-charcoal/15 mb-10">
-            {/* Replace with a cover image of your actual catalogue */}
+          <a
+            href={CATALOGUE_CANVA_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open the Alchemy of Scents catalogue on Canva"
+            className="relative block w-full max-w-md mx-auto aspect-[3/4] overflow-hidden bg-white border border-charcoal/15 mb-10"
+          >
             <Image
               src="/catalogue/_AOS Catalog - With Pricing.png"
               alt="Alchemy of Scents catalogue cover"
               fill
               className="object-cover"
             />
-          </div>
+          </a>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={CATALOGUE_PDF}
+              href={CATALOGUE_CANVA_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block border border-charcoal bg-charcoal text-white px-9 py-4 text-[11px] tracking-[0.2em] hover:bg-white hover:text-charcoal transition-colors"

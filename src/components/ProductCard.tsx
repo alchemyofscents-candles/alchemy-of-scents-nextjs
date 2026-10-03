@@ -17,7 +17,7 @@ export default function ProductCard({ title, description, image }: Product) {
           className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
       </div>
-      <div className="border-t border-charcoal pt-3">
+      <div>
         <h3 className="text-lg uppercase mb-2">{title}</h3>
         <p className="text-sm text-charcoal/70 leading-relaxed mb-4">{description}</p>
         <a
