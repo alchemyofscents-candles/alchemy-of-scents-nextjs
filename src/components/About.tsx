@@ -20,27 +20,36 @@ export default function About() {
           <div className="border-t border-charcoal pt-4 mb-8">
             <p className="text-[11px] tracking-[0.25em]">ABOUT US</p>
           </div>
-          <h2 className="text-4xl md:text-6xl leading-[1] mb-8 uppercase">
-            Fragrance turns moments into rituals
+          <h2 className="text-3xl md:text-5xl leading-[1] mb-8 uppercase">
+            Your brand, our craftsmanship
           </h2>
           <div className="space-y-5 text-charcoal/75 leading-relaxed max-w-md font-bold text-[15px]">
             <p>
-              Alchemy of Scents was created with a simple belief — fragrance
-              has the power to transform a space and turn ordinary moments
-              into meaningful rituals.
+              Alchemy of Scents began as a small self-care studio, built on a
+              simple belief: fragrance can transform a space and turn ordinary
+              moments into meaningful rituals.
             </p>
             <p>
-              We create thoughtfully handpoured candles
-              with a focus on quality, quick turnaround time and customer satisfaction.
+              Today, we&apos;re bringing that idea of wellness to a much larger
+              scale. Every candle is hand-poured by our in-house team in our own
+              factory, using premium wax and fragrances. We handle production
+              and manufacturing end to end, with the quickest turnaround in the
+              business, and ship across India.
             </p>
             <p>
-              From everyday candles to customisations and gifting, we bring
-              together fragrance, craftsmanship and thoughtful design.
+              We&apos;re grateful to have been trusted by brands like JW
+              Marriott, Jimmy Choo and Titan, and we&apos;d love to create
+              something for yours.
             </p>
           </div>
-          <p className="text-lg mt-8">
-            Crafted with intention. Designed to be remembered.
-          </p>
+          <a
+            href="https://wa.me/919019951550?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20a%20bulk%20order."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-lg mt-8 underline underline-offset-4 hover:opacity-70 transition-opacity"
+          >
+            Planning an order? Get a quote in 24 hours.
+          </a>
         </FadeIn>
       </div>
     </section>

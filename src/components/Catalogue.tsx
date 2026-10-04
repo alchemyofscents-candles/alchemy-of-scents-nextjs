@@ -11,11 +11,10 @@ export default function Catalogue() {
         <FadeIn className="max-w-xl mx-auto mb-12">
           <p className="text-[11px] tracking-[0.25em] mb-5">CATALOGUE</p>
           <h2 className="text-4xl md:text-6xl text-charcoal mb-4 uppercase">
-            Our catalogue
+            Our Catalogue
           </h2>
           <p className="text-charcoal/70">
-            Discover our fragrances, scent notes, and curated selection of containers.
-          </p>
+          Select from our curated containers - Customize the fragrance, labelling and packaging for your brand.</p>
         </FadeIn>
 
         <FadeIn delay={120}>
