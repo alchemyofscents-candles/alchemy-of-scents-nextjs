@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import DiwaliDecor from "@/components/DiwaliDecor";
 import About from "@/components/About";
 import Products from "@/components/Products";
 import Catalogue from "@/components/Catalogue";
@@ -14,7 +13,6 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <DiwaliDecor />
         <About />
         <Products />
         <Catalogue />

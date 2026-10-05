@@ -4,15 +4,12 @@ export default function Hero() {
   return (
     <section id="home">
       <div className="relative w-full min-h-[560px] h-[85vh] bg-taupe">
-        <picture>
-          <source media="(min-width: 768px)" srcSet="/images/web-version.png" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/mobile-version.png"
-            alt="Alchemy of Scents Diwali candles"
-            className="absolute inset-0 h-full w-full object-cover object-center"
-          />
-        </picture>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/diwali-decor.jpg"
+          alt="Alchemy of Scents Diwali decor"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
 
         <FadeIn className="absolute bottom-0 left-0 right-0 p-6 md:p-12 text-white">
